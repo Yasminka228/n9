@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Адаптивная страница — Макет 2</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header__content">
+      <div class="logo">LOGO</div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#why">Почему мы</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#form">Связаться</a></li>
+        </ul>
+      </nav>
+      <div class="burger">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- Приветственная секция -->
+  <section class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">Добро пожаловать в наш сервис</h1>
+      <p class="hero__subtitle">Создаём адаптивные сайты, которые работают на любых устройствах</p>
+      <button class="hero__btn">Подробнее</button>
+    </div>
+  </section>
+
+  <!-- Почему мы -->
+  <section id="why" class="why">
+    <h2 class="section-title">Почему выбирают нас</h2>
+    <div class="why__items">
+      <div class="why__item">
+        <h3>Скорость</h3>
+        <p>Быстрая загрузка и оптимизация под мобильные устройства</p>
+      </div>
+      <div class="why__item">
+        <h3>Дизайн</h3>
+        <p>Современный адаптивный интерфейс</p>
+      </div>
+      <div class="why__item">
+        <h3>Поддержка</h3>
+        <p>Всегда на связи и готовы помочь</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы -->
+  <section id="reviews" class="reviews">
+    <h2 class="section-title">Отзывы наших клиентов</h2>
+    <div class="reviews__list">
+      <div class="review">
+        <p>“Сайт работает идеально и выглядит отлично на телефоне!”</p>
+        <span>— Анна</span>
+      </div>
+      <div class="review">
+        <p>“Очень доволен адаптивной версткой. Спасибо команде!”</p>
+        <span>— Иван</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Форма -->
+  <section id="form" class="form">
+    <h2 class="section-title">Свяжитесь с нами</h2>
+    <form class="form__inner">
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="email" placeholder="Ваш email" required>
+      <textarea placeholder="Сообщение"></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Все права защищены</p>
+  </footer>
+
+  <script>
+    // Простейшее бургер-меню
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('nav--active');
+    });
+  </script>
+</body>
+</html>
