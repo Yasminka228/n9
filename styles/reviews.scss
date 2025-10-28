@@ -1,0 +1,32 @@
+.reviews {
+  padding: 60px 20px;
+  text-align: center;
+
+  & h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  &__item {
+    min-width: 250px;
+    padding: 25px 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    font-style: italic;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews__list {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
