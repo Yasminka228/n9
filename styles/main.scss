@@ -1,0 +1,9 @@
+@import 'header';
+@import 'why';
+@import 'reviews';
+@import 'form';
+
+/* ОБЩИЕ МЕДИАЗАПРОСЫ */
+@media (min-width: 992px) {} /* ПК */
+@media (min-width: 768px) and (max-width: 991px) {} /* Планшет */
+@media (max-width: 767px) {} /* Мобильные */
